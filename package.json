@@ -1,0 +1,12 @@
+{
+  "name": "bjorn-website",
+  "version": "1.0.0",
+  "description": "BJØRN - Sitio web de moda vikinga",
+  "scripts": {
+    "dev": "python3 -m http.server 8080 || python -m http.server 8080 || npx serve . -p 8080",
+    "start": "python3 -m http.server 8080 || python -m http.server 8080 || npx serve . -p 8080"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

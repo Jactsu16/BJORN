@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BJØRN - Moda Vikinga Moderna</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="public/placeholder.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <!-- Header/Navigation -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-brand">
+            <div class="logo">
+              <svg
+                class="crown-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L20.29 6.890a.5.5 0 0 1 .734.215L22.5 11.5H1.5l1.476-4.395a.5.5 0 0 1 .734-.215l3.384 2.274a1 1 0 0 0 1.516-.294L11.562 3.266Z"
+                />
+                <path d="M1.5 11.5h21v2a2 2 0 0 1-2 2H3.5a2 2 0 0 1-2-2v-2Z" />
+              </svg>
+            </div>
+            <span class="brand-name">BJØRN</span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="nav-menu desktop-menu">
+            <a href="productos.html" class="nav-link">Productos</a>
+            <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+            <a href="resenas.html" class="nav-link">Reseñas</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+          </div>
+
+          <!-- Desktop Tienda Button -->
+          <div class="nav-actions desktop-actions">
+            <a href="tienda.html" class="btn btn-primary">Tienda</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="mobile-actions">
+            <a href="tienda.html" class="btn btn-primary btn-sm">Tienda</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+              <svg
+                class="menu-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+              <svg
+                class="close-icon hidden"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="m18 6-12 12" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden">
+          <div class="mobile-menu-content">
+            <a href="productos.html" class="mobile-menu-link">Productos</a>
+            <a href="sobre-nosotros.html" class="mobile-menu-link"
+              >Sobre Nosotros</a
+            >
+            <a href="resenas.html" class="mobile-menu-link">Reseñas</a>
+            <a href="contacto.html" class="mobile-menu-link">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">🔥 LANZAMIENTO EXCLUSIVO 🔥</div>
+            <h1 class="hero-title">
+              BJØRN
+              <span class="hero-subtitle">Suéter Mjölnir Disponible</span>
+            </h1>
+            <p class="hero-description">
+              Presentamos nuestro primer producto: un suéter premium que encarna
+              la fuerza vikinga. El inicio de una nueva era en moda nórdica
+              moderna.
+            </p>
+
+            <div class="hero-actions">
+              <a href="tienda.html" class="btn btn-primary btn-lg">
+                Explorar Colección
+                <svg
+                  class="chevron-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </a>
+              <a href="sobre-nosotros.html" class="btn btn-outline btn-lg">
+                Ver Historia
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="product-card">
+              <img
+                src="public/placeholder.svg"
+                alt="Producto Destacado BJØRN"
+                class="product-image"
+              />
+              <div class="product-info">
+                <div class="product-badge">DISPONIBLE AHORA</div>
+                <h3 class="product-name">Suéter Mjölnir</h3>
+                <p class="product-description">
+                  Nuestro primer lanzamiento oficial
+                </p>
+                <p class="product-price">€89</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Colección Inaugural</h2>
+          <p class="section-description">
+            Comenzamos nuestro viaje con el Suéter Mjölnir, el primero de muchos
+            productos vikingos auténticos
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card available">
+            <div class="product-image-container">
+              <img
+                src="public/placeholder.svg"
+                alt="Suéter Mjölnir"
+                class="product-image"
+              />
+              <div class="product-badge available">DISPONIBLE</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Suéter Mjölnir</h3>
+              <p class="product-desc">El primer producto de la marca BJØRN</p>
+              <div class="product-footer">
+                <span class="product-price">€89</span>
+                <div class="product-actions">
+                  <a href="tienda.html" class="btn btn-sm btn-primary"
+                    >Comprar</a
+                  >
+                  <a href="productos.html" class="btn btn-sm btn-outline"
+                    >Ver</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card upcoming">
+            <div class="product-image-container">
+              <img
+                src="public/placeholder.svg"
+                alt="Camiseta Rúnica"
+                class="product-image"
+              />
+              <div class="product-badge upcoming">PRÓXIMAMENTE</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Camiseta Rúnica</h3>
+              <p class="product-desc">Próximo lanzamiento vikingo</p>
+              <div class="product-footer">
+                <span class="product-price">€49</span>
+                <div class="product-actions">
+                  <button class="btn btn-sm btn-disabled" disabled>
+                    Próximamente
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card upcoming">
+            <div class="product-image-container">
+              <img
+                src="public/placeholder.svg"
+                alt="Hoodie Valhalla"
+                class="product-image"
+              />
+              <div class="product-badge upcoming">PRÓXIMAMENTE</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Hoodie Valhalla</h3>
+              <p class="product-desc">Próximo lanzamiento vikingo</p>
+              <div class="product-footer">
+                <span class="product-price">€75</span>
+                <div class="product-actions">
+                  <button class="btn btn-sm btn-disabled" disabled>
+                    Próximamente
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card upcoming">
+            <div class="product-image-container">
+              <img
+                src="public/placeholder.svg"
+                alt="Gorra Vikinga"
+                class="product-image"
+              />
+              <div class="product-badge upcoming">PRÓXIMAMENTE</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Gorra Vikinga</h3>
+              <p class="product-desc">Próximo lanzamiento vikingo</p>
+              <div class="product-footer">
+                <span class="product-price">€35</span>
+                <div class="product-actions">
+                  <button class="btn btn-sm btn-disabled" disabled>
+                    Próximamente
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card upcoming">
+            <div class="product-image-container">
+              <img
+                src="public/placeholder.svg"
+                alt="Chaqueta Nórdica"
+                class="product-image"
+              />
+              <div class="product-badge upcoming">PRÓXIMAMENTE</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Chaqueta Nórdica</h3>
+              <p class="product-desc">Próximo lanzamiento vikingo</p>
+              <div class="product-footer">
+                <span class="product-price">€149</span>
+                <div class="product-actions">
+                  <button class="btn btn-sm btn-disabled" disabled>
+                    Próximamente
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card upcoming">
+            <div class="product-image-container">
+              <img
+                src="public/placeholder.svg"
+                alt="Accesorios Rúnicos"
+                class="product-image"
+              />
+              <div class="product-badge upcoming">PRÓXIMAMENTE</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Accesorios Rúnicos</h3>
+              <p class="product-desc">Próximo lanzamiento vikingo</p>
+              <div class="product-footer">
+                <span class="product-price">€25-85</span>
+                <div class="product-actions">
+                  <button class="btn btn-sm btn-disabled" disabled>
+                    Próximamente
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="about-title">La Saga de BJØRN</h2>
+            <p class="about-description">
+              Nacido de la fusión entre la sabiduría ancestral nórdica y la
+              innovación moderna, BJØRN representa la evolución del espíritu
+              vikingo en el siglo XXI.
+            </p>
+            <p class="about-subdescription">
+              Cada pieza es forjada con la determinación de los guerreros del
+              norte, honrando tradiciones milenarias mientras abraza la
+              funcionalidad contemporánea.
+            </p>
+
+            <div class="features-grid">
+              <div class="feature">
+                <svg
+                  class="feature-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                  />
+                </svg>
+                <h3 class="feature-title">Auténtico</h3>
+                <p class="feature-description">
+                  Inspirado en artefactos históricos reales
+                </p>
+              </div>
+              <div class="feature">
+                <svg
+                  class="feature-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L20.29 6.890a.5.5 0 0 1 .734.215L22.5 11.5H1.5l1.476-4.395a.5.5 0 0 1 .734-.215l3.384 2.274a1 1 0 0 0 1.516-.294L11.562 3.266Z"
+                  />
+                  <path
+                    d="M1.5 11.5h21v2a2 2 0 0 1-2 2H3.5a2 2 0 0 1-2-2v-2Z"
+                  />
+                </svg>
+                <h3 class="feature-title">Premium</h3>
+                <p class="feature-description">
+                  Materiales nobles y acabados excepcionales
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <div class="image-container">
+              <img
+                src="public/placeholder.svg"
+                alt="Historia BJØRN"
+                class="about-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Voces de Guerreros</h2>
+          <p class="section-description">
+            Lo que dicen quienes han abrazado el espíritu BJØRN
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="stars">
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+              </div>
+              <p class="testimonial-quote">
+                "La calidad es excepcional. Cada pieza cuenta una historia que
+                trasciende el tiempo."
+              </p>
+              <div class="testimonial-author">
+                <p class="author-name">Erik Nordström</p>
+                <p class="author-role">Coleccionista</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="stars">
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+              </div>
+              <p class="testimonial-quote">
+                "BJØRN ha capturado perfectamente la esencia del diseño nórdico
+                moderno."
+              </p>
+              <div class="testimonial-author">
+                <p class="author-name">Astrid Larsen</p>
+                <p class="author-role">Diseñadora</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="stars">
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon
+                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+                  />
+                </svg>
+              </div>
+              <p class="testimonial-quote">
+                "Nunca había sentido una conexión tan profunda con mis raíces
+                vikingas."
+              </p>
+              <div class="testimonial-author">
+                <p class="author-name">Magnus Eriksson</p>
+                <p class="author-role">Entusiasta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h2 class="newsletter-title">Únete a la Hermandad</h2>
+            <p class="newsletter-description">
+              Sé el primero en conocer nuevas colecciones, historias épicas y
+              ofertas exclusivas reservadas para los miembros de la hermandad
+              BJØRN.
+            </p>
+          </div>
+
+          <div class="newsletter-form-container">
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+              <div class="form-group">
+                <div class="input-container">
+                  <svg
+                    class="input-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                  <input
+                    type="email"
+                    class="form-input"
+                    placeholder="tu.email@valhalla.com"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Unirse</button>
+              </div>
+              <p class="form-note">
+                Al unirte, recibirás un <strong>15% de descuento</strong> en tu
+                primera compra
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <svg
+                class="crown-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L20.29 6.890a.5.5 0 0 1 .734.215L22.5 11.5H1.5l1.476-4.395a.5.5 0 0 1 .734-.215l3.384 2.274a1 1 0 0 0 1.516-.294L11.562 3.266Z"
+                />
+                <path d="M1.5 11.5h21v2a2 2 0 0 1-2 2H3.5a2 2 0 0 1-2-2v-2Z" />
+              </svg>
+              <span class="footer-brand-name">BJØRN</span>
+            </div>
+            <p class="footer-tagline">
+              Forjando el futuro con la sabiduría del pasado.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-title">Productos</h3>
+            <div class="footer-links">
+              <a href="#" class="footer-link">Colecciones</a>
+              <a href="#" class="footer-link">Novedades</a>
+              <a href="#" class="footer-link">Exclusivos</a>
+              <a href="#" class="footer-link">Ofertas</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-title">Soporte</h3>
+            <div class="footer-links">
+              <a href="contacto.html" class="footer-link">Contacto</a>
+              <a href="#" class="footer-link">Envíos</a>
+              <a href="#" class="footer-link">Devoluciones</a>
+              <a href="#" class="footer-link">FAQ</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-title">Síguenos</h3>
+            <div class="footer-links">
+              <a href="#" class="footer-link">Instagram</a>
+              <a href="#" class="footer-link">Facebook</a>
+              <a href="#" class="footer-link">Twitter</a>
+              <a href="#" class="footer-link">YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2024 BJØRN. Todos los derechos reservados. | Hecho con honor y
+            determinación vikinga.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

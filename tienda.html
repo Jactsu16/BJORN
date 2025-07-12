@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda - BJØRN | Moda Vikinga Moderna</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav-brand">
+            <div class="logo">
+              <svg
+                class="crown-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L20.29 6.890a.5.5 0 0 1 .734.215L22.5 11.5H1.5l1.476-4.395a.5.5 0 0 1 .734-.215l3.384 2.274a1 1 0 0 0 1.516-.294L11.562 3.266Z"
+                />
+                <path d="M1.5 11.5h21v2a2 2 0 0 1-2 2H3.5a2 2 0 0 1-2-2v-2Z" />
+              </svg>
+            </div>
+            <span class="brand-name">BJØRN</span>
+          </a>
+          <div class="nav-menu desktop-menu">
+            <a href="productos.html" class="nav-link">Productos</a>
+            <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+            <a href="resenas.html" class="nav-link">Reseñas</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+          </div>
+          <a href="index.html" class="btn btn-outline">Volver</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content single-column">
+          <div class="hero-text centered">
+            <div class="hero-badge">🔥 LANZAMIENTO EXCLUSIVO 🔥</div>
+            <h1 class="hero-title">
+              BJØRN SUÉTER<span class="hero-subtitle"
+                >Colección Vikinga Inaugural</span
+              >
+            </h1>
+            <p class="hero-description">
+              Presentamos nuestro primer producto: un suéter premium que encarna
+              la fuerza y el legado nórdico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+        <div class="cta-container">
+          <h2 class="cta-title">Próximamente Disponible</h2>
+          <p class="cta-description">
+            El Suéter Mjölnir estará disponible para compra muy pronto. Únete a
+            nuestra lista de espera para ser el primero en obtenerlo.
+          </p>
+          <div class="newsletter-form-container">
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+              <div class="form-group">
+                <div class="input-container">
+                  <input
+                    type="email"
+                    class="form-input"
+                    placeholder="tu.email@valhalla.com"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Notificarme
+                </button>
+              </div>
+              <p class="form-note">
+                Te notificaremos cuando esté disponible +
+                <strong>15% de descuento</strong>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

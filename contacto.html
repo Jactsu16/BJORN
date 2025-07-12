@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - BJØRN | Moda Vikinga Moderna</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav-brand">
+            <div class="logo">
+              <svg
+                class="crown-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L20.29 6.890a.5.5 0 0 1 .734.215L22.5 11.5H1.5l1.476-4.395a.5.5 0 0 1 .734-.215l3.384 2.274a1 1 0 0 0 1.516-.294L11.562 3.266Z"
+                />
+                <path d="M1.5 11.5h21v2a2 2 0 0 1-2 2H3.5a2 2 0 0 1-2-2v-2Z" />
+              </svg>
+            </div>
+            <span class="brand-name">BJØRN</span>
+          </a>
+          <div class="nav-menu desktop-menu">
+            <a href="tienda.html" class="nav-link">Tienda</a>
+            <a href="productos.html" class="nav-link">Productos</a>
+            <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+            <a href="resenas.html" class="nav-link">Reseñas</a>
+          </div>
+          <a href="index.html" class="btn btn-outline">Volver</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content single-column">
+          <div class="hero-text centered">
+            <div class="hero-badge">ESTAMOS AQUÍ PARA TI</div>
+            <h1 class="hero-title">
+              Contacto<span class="hero-subtitle"
+                >Conecta con la Hermandad BJØRN</span
+              >
+            </h1>
+            <p class="hero-description">
+              ¿Tienes preguntas, sugerencias o simplemente quieres unirte a
+              nuestra comunidad? Estamos aquí para escucharte.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="about-title">¿Cómo Podemos Ayudarte?</h2>
+            <form class="contact-form" onsubmit="handleContactForm(event)">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="tu.email@valhalla.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <select class="form-input" required>
+                  <option value="">Tipo de consulta</option>
+                  <option value="producto">Consulta sobre productos</option>
+                  <option value="orden">Estado de pedido</option>
+                  <option value="general">Consulta general</option>
+                  <option value="colaboracion">Colaboración</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-input"
+                  rows="5"
+                  placeholder="Cuéntanos cómo podemos ayudarte..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg full-width">
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+
+          <div class="about-image">
+            <div class="contact-info">
+              <h3 class="about-title">Información de Contacto</h3>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <strong>Email:</strong> hola@bjorn-viking.com
+                </div>
+                <div class="contact-item">
+                  <strong>Teléfono:</strong> +34 123 456 789
+                </div>
+                <div class="contact-item">
+                  <strong>Dirección:</strong> Barcelona, España
+                </div>
+                <div class="contact-item">
+                  <strong>Horario:</strong> Lun-Vie: 9:00-18:00 CET
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+      function handleContactForm(event) {
+        event.preventDefault();
+        showNotification(
+          "¡Mensaje enviado! Te responderemos pronto, guerrero.",
+        );
+        event.target.reset();
+      }
+    </script>
+  </body>
+</html>
